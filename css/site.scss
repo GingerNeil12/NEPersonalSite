@@ -3,6 +3,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  background-color: #f4f4f4;
 }
 
 #heroImage {
@@ -118,4 +119,8 @@ body {
 .navbar-background {
   /*background-color: #4b0082;*/
   background: linear-gradient(#4b0082, #9366b4);
+}
+
+#aboutMe div.col-md-8 {
+  background-color: #4b0082;
 }

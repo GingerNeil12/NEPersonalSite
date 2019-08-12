@@ -10564,6 +10564,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: Montserrat, sans-serif;
+  background-color: #f4f4f4;
 }
 
 #heroImage {
@@ -10656,5 +10657,9 @@ body {
   /*background-color: #4b0082;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#4b0082), to(#9366b4));
   background: linear-gradient(#4b0082, #9366b4);
+}
+
+#aboutMe div.col-md-8 {
+  background-color: #4b0082;
 }
 /*# sourceMappingURL=site.css.map */
