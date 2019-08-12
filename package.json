@@ -18,5 +18,11 @@
   "homepage": "https://github.com/GingerNeil12/Website#readme",
   "devDependencies": {
     "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "sass": "^1.22.9"
   }
 }
