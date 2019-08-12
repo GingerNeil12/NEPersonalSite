@@ -4,7 +4,7 @@
   "description": "This is my personal website. It will be used as a portfolio site as well as a blog site. I will be trialing new technologies to me in implementing it",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.html"
   },
   "repository": {
     "type": "git",
