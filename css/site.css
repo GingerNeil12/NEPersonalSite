@@ -10565,4 +10565,96 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: Montserrat, sans-serif;
 }
+
+#heroImage {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/hero_image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+#heroTitle {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  /* This bit contols the fade in animation for the title text */
+  -webkit-animation: fadein 3s ease;
+  animation: fadein 3s ease;
+}
+
+/* The follow few are the transitions for the fade in effect for the title text */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+
+/* This is the CSS for the spacing and hover for the title text/button */
+#heroTitle h1,
+#heroTitle p {
+  margin-bottom: 2.5rem;
+}
+
+#heroTitle a {
+  text-decoration: none;
+}
+
+#heroTitle a:hover {
+  background-color: #28a745;
+}
+
+.pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.transition-background {
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.navbar-background {
+  /*background-color: #4b0082;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b0082), to(#9366b4));
+  background: linear-gradient(#4b0082, #9366b4);
+}
 /*# sourceMappingURL=site.css.map */
