@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "This is my personal website. It will be used as a portfolio site as well as a blog site. I will be trialing new technologies to me in implementing it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GingerNeil12/Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GingerNeil12/Website/issues"
+  },
+  "homepage": "https://github.com/GingerNeil12/Website#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
