@@ -1,6 +1,3 @@
-function myFunction() {
-  var email = document.getElementById("emailInput").value;
-  var message = document.getElementById("message").value;
-
-  alert(email + " " + message);
+function sendMail() {
+  alert("Unable to send currently. Please try again at a later date");
 }
