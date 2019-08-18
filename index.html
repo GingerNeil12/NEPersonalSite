@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="./css/site.css" />
     <title>NE - Landing Page</title>
   </head>
+
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#heroImage">NE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#heroImage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#aboutMe">About Me</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-info navbar-btn"
+                data-toggle="modal"
+                data-target="#contactMe"
+              >
+                Contact Me
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div id="heroImage">
       <div id="heroTitle">
         <h1 class="display-1 text-white">Neil Earlam</h1>
@@ -18,8 +60,8 @@
 
     <div class="mt-5 container">
       <section class="row" id="aboutMe">
-        <div class="col-md-8 p-5">
-          <h1 class="text-white mb-4">About Me</h1>
+        <div class="col-md-8">
+          <h1 class="text-white mb-4 display-4">About Me</h1>
           <p class="text-white">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
             magnam harum deserunt facere ratione aperiam laborum quas excepturi,
@@ -29,13 +71,13 @@
             ullam praesentium quibusdam recusandae nulla. Quod, velit.
           </p>
         </div>
-        <div class="col-md-4 pl-5">
-          <h1>IMAGE GOES HERE</h1>
+        <div class="col-md-4">
+          <img src="./images/me.jpg" alt="" style="max-width: 450px;" />
         </div>
       </section>
     </div>
 
-    <footer class="mt-5 bg-primary position-sticky mb-0">
+    <footer class="mt-5 position-sticky mb-0">
       <section id="socialMedia" class="container">
         <div class="d-flex flex-row bd-highlight">
           <div class="pt-3 pb-3 bd-highlight">
@@ -49,13 +91,93 @@
             </a>
           </div>
           <div class="pt-3 pb-3 ml-auto bd-highlight">
-            <a href="#" class="text-decoration-none text-white">
-              Twitter <span class="fa fa-twitter"></span>
-            </a>
+            <button
+              class="btn btn-info"
+              data-toggle="modal"
+              data-target="#contactMe"
+            >
+              Contact Me <span class="fa fa-envelope"></span>
+            </button>
           </div>
         </div>
       </section>
     </footer>
+
+    <div
+      class="modal fade"
+      id="contactMe"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="emailInput" class="col-form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="col-form-label">Message</label>
+                <textarea class="form-control" id="message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="myFunction()"
+            >
+              Send message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/site.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

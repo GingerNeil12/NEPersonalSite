@@ -10563,14 +10563,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
 
 #heroImage {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/hero_image.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero_image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/hero_image-medium.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero_image-medium.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -10658,9 +10662,5 @@ body {
   /*background-color: #4b0082;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#4b0082), to(#9366b4));
   background: linear-gradient(#4b0082, #9366b4);
-}
-
-#aboutMe div.col-md-8 {
-  background-color: #4b0082;
 }
 /*# sourceMappingURL=site.css.map */

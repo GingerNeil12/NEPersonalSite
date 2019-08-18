@@ -2,14 +2,18 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
 
 #heroImage {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/hero_image.jpg");
+    url("../images/hero_image-medium.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -120,8 +124,4 @@ body {
 .navbar-background {
   /*background-color: #4b0082;*/
   background: linear-gradient(#4b0082, #9366b4);
-}
-
-#aboutMe div.col-md-8 {
-  background-color: #4b0082;
 }
