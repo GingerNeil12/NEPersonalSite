@@ -37,13 +37,13 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <button
-                class="btn btn-outline-info navbar-btn"
+              <a
+                href="#"
+                class="nav-link text-white"
                 data-toggle="modal"
                 data-target="#contactMe"
+                >Contact Me</a
               >
-                Contact Me
-              </button>
             </li>
           </ul>
         </div>
@@ -71,8 +71,8 @@
             ullam praesentium quibusdam recusandae nulla. Quod, velit.
           </p>
         </div>
-        <div class="col-md-4">
-          <img src="./images/me.jpg" alt="" style="max-width: 425px;" />
+        <div class="col-md-4" id="myImage">
+          <img src="./images/me.jpg" alt="" />
         </div>
       </section>
     </div>
@@ -81,12 +81,20 @@
       <section id="socialMedia" class="container">
         <div class="d-flex flex-row bd-highlight">
           <div class="pt-3 pb-3 bd-highlight">
-            <a href="#" class="text-decoration-none text-white">
+            <a
+              href="https://www.facebook.com/neil.earlam.5"
+              target="_blank"
+              class="text-decoration-none text-white"
+            >
               Facebook <span class="fa fa-facebook"></span>
             </a>
           </div>
           <div class="pt-3 pb-3 ml-auto bd-highlight">
-            <a href="#" class="text-decoration-none text-white">
+            <a
+              href="https://github.com/GingerNeil12"
+              target="_blank"
+              class="text-decoration-none text-white"
+            >
               GitHub <span class="fa fa-github"></span>
             </a>
           </div>
@@ -103,6 +111,7 @@
       </section>
     </footer>
 
+    <!-- MODAL DOWN HERE FOLKS -->
     <div
       class="modal fade"
       id="contactMe"
@@ -178,7 +187,7 @@
     <script>
       $(document).ready(
         $(window).scroll(function() {
-          if ($(window).scrollTop() > 250) {
+          if ($(window).scrollTop() > 150) {
             $("#navbar")
               .addClass("bg-dark")
               .removeClass("bg-transparent");

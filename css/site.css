@@ -10675,4 +10675,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#4b0082), to(#9366b4));
   background: linear-gradient(#4b0082, #9366b4);
 }
+
+#myImage img {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=site.css.map */
