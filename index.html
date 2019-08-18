@@ -10,7 +10,7 @@
 
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top transition-background"
       id="navbar"
     >
       <div class="container">
@@ -72,7 +72,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img src="./images/me.jpg" alt="" style="max-width: 450px;" />
+          <img src="./images/me.jpg" alt="" style="max-width: 425px;" />
         </div>
       </section>
     </div>
@@ -175,5 +175,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 250) {
+            $("#navbar")
+              .addClass("bg-dark")
+              .removeClass("bg-transparent");
+          } else {
+            $("#navbar")
+              .addClass("bg-transparent")
+              .removeClass("bg-dark");
+          }
+        })
+      );
+    </script>
   </body>
 </html>
